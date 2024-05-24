@@ -25,13 +25,16 @@ export default function Test() {
 
   return (
     <div>
+      <h1>Get Input</h1>
       <input
+        className="input"
         onChange={(e) => setItem(e.target.value)}
         placeholder="Fruit"
         type="text"
       />
       <button onClick={AddItem}>Add</button>
       <br />
+      <h1>Main Table</h1>
       <table className="table">
         <tbody>
           <tr>
